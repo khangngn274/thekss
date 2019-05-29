@@ -12,8 +12,8 @@
             @include('frontend::layouts.business')
 
 
-            @include('frontend::layouts.news')
-
+{{--             @include('frontend::layouts.news')
+ --}}
             @include('frontend::layouts.download')
 
 

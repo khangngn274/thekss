@@ -29,19 +29,19 @@
                         </ul>
                     </li>
                     <li><a href="{{ url('ucd-product') }}"><div>Product</div></a>
-                        <ul>
-                            <li><a href="#"><div>Street Lighting</div></a></li>
-                            <li><a href="#"><div>Flood Lighting</div></a></li>
-                            <li><a href="#"><div>Spot Lighting</div></a></li>
-                            <li><a href="#"><div>Secutiry Lighting</div></a></li>   
-                            <li><a href="#"><div>Industrial Lighting</div></a></li>
-                            <li><a href="#"><div>Search Lighting</div></a></li>          
-                            <li><a href="#"><div>Garden Lighting</div></a></li>
-                            <li><a href="#"><div>Tunel Lighting</div></a></li>
-                        </ul>
+                        @php
+                    		use App\Models\Category;
+							$categories  = Category::where('category_parent_id' , 1)->get();
+
+                    	@endphp
+                    	<ul>
+						@foreach ($categories as $category)
+							<li><a href="{{ url('ucd-product/'.$category->category_id) }}">{{$category->category_name_en}}</a></li>
+						@endforeach                    	
+						</ul>
+                        
                     </li>
                     <li><a href="{{ url('ucd-project') }}"><div>Reference</div></a></li>
-                    <li><a href="{{ url('blog') }}"><div>News</div></a></li>
 		            <li><a data-href="#section-footer" href="#"><div>Contact</div></a></li>
 				</ul>
 
@@ -50,12 +50,12 @@
 
 				<!-- Top Search
 				============================================= -->
-				<div id="top-search">
+			{{-- 	<div id="top-search">
 					<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
 					<form action="search.html" method="get">
 						<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
 					</form>
-				</div><!-- #top-search end -->
+				</div><!-- #top-search end --> --}}
 
 			</nav><!-- #primary-menu end -->
 

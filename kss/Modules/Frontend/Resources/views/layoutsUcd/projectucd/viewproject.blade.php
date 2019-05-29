@@ -66,16 +66,16 @@
 					<div class="modal fade bs-example-modal-lg" id="{{ $project->project_alias }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-lg">
 							<div class="modal-body">
-								<div class="modal-content" style="height: 950px;">
+								<div class="modal-content" style="max-height: 950px;">
 									
 									<div class="modal-header">
 										<h2 class="modal-title" id="myModalLabel">{{ $project->project_name_en }}</h2>
 									</div>
-									<div class="modal-body no-gutters" style="max-width: 1000px">
+									<div class="modal-body p-1 no-gutters" style="max-width: 1600px">
 										<div class="container">
 
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 col-sm-12 p-0">
 													@php
 													echo $project->project_description_en;	
 

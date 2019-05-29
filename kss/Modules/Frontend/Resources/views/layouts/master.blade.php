@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('index/css/font-icons.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('index/css/animate.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('index/css/magnific-popup.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('index/css/swiper.css') }}" type="text/css" />
 
     <link rel="stylesheet" href="{{ asset('index/css/responsive.css') }}" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

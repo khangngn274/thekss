@@ -68,7 +68,8 @@
               <div class="control-group">
                 <label class="control-label">Project Description_en</label>
                 <div class="controls">
-                  <textarea name="project_description_en" id="project_description_en"></textarea>
+                  <textarea name="project_description_en" id="project_description_en">
+                  </textarea>
                 </div>
               </div>
               <div class="control-group">
@@ -98,11 +99,8 @@
                 </div>
               </div>
                 
-
                 {{-- Start UCD --}}
               
-              
-
               <div class="form-actions">
                 <input type="submit" value="Add project" class="btn btn-success">
               </div>

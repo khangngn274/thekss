@@ -199,8 +199,8 @@
 								<div class="oc-item">
 									<div class="product iproduct clearfix">
 										<div class="product-image">
-											<a href="#"><img src="{{ asset("backend/img/product/".$value->product_image) }}" alt="{{$value->product_name_en}}"></a>
-											<a href="#"><img src="{{ asset("backend/img/product/".$value->product_image) }}" alt="{{$value->product_name_en}}"></a>
+											<a href="{{ url('product-detail/'.$value->product_id) }}"><img src="{{ asset("backend/img/product/".$value->product_image) }}" alt="{{$value->product_name_en}}"></a>
+											<a href="{{ url('product-detail/'.$value->product_id) }}"><img src="{{ asset("backend/img/product/".$value->product_image) }}" alt="{{$value->product_name_en}}"></a>
 
 										</div>
 										<div class="product-desc center">

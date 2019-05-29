@@ -5,6 +5,8 @@ namespace Modules\Frontend\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use App\Models\Category;
+
 
 class FrontendController extends Controller
 {
@@ -14,7 +16,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        return view('frontend::layouts.index');
+        $category = Category::where(['category_parent_id' => 1])->get();
+        return view('frontend::layouts.index')->with(compact('category'));
     }
 
     /**

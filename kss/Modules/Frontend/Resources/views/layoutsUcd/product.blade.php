@@ -8,13 +8,13 @@
 			<div class="row mb-lg-4">
 				@foreach ($productradom as $product)
 
-				<div class="col-lg-4 mb-4">
-					<div class="flip-card text-center">
-						<div class="flip-card-front" style="background-image: url('backend/img/product/{{$product->product_image}}')">
-							<div class="flip-card-inner" id="flip-card-inner">
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="flip-card text-center" style="height: auto;">
+						<div class="flip-card-front" style="background-image: url('backend/img/product/{{$product->product_image}}'); background-size: 88%;">
+							<div class="flip-card-inner pb-0" id="flip-card-inner">
 								<div class="card nobg noborder text-center">
-									<div class="card-body">
-										<h4 class="card-title text-dark">{{$product->product_name_en}}</h4>
+									<div class="card-body pb-0">
+										<h4 class="card-title text-dar mb-0">{{$product->product_name_en}}</h4>
 									</div>
 								</div>
 							</div>

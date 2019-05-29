@@ -22,7 +22,7 @@
 				<div class="container clearfix">
 					
 						<div class="row">
-							<div class="col-3">
+							<div class="col-lg-3 col-12">
 								<div class="sidebar nobottommargin">
 									<div class="sidebar-widgets-wrap">
 
@@ -44,18 +44,18 @@
 							</div>
 
 								
-							<div class="col-9">
-								<div class="row grid-container mb-lg-5" data-layout="masonry" style="overflow: visible">
+							<div class="col-lg-9 col-12">
+								<div class="row grid-container" data-layout="masonry" {{-- style="overflow: visible" --}}>
 									@foreach ($products as $product)
 
 										{{-- expr --}}
-									<div class="col-lg-4 mb-5">
+									<div class="col-lg-4 col-md-6 col-12 product_item" style="margin-bottom: 22%;">
 										<div class="flip-card text-center">
 											<div class="flip-card-front" style="background-image: url('{{ asset("backend/img/product/$product->product_image") }}'); height: 200px;">
 												<div class="flip-card-inner p-0" id="flip-card-inner">
 													<div class="card nobg noborder text-center">
 														<div class="card-body p-0">
-															<h5 class="card-title text-dark" style="padding-top: 20%; margin-bottom: 0px!important;">{{$product->product_name_en}}</h5>
+															<h5 class="card-title text-dark" style="padding-top: 50%; margin-bottom: 0px!important;">{{$product->product_name_en}}</h5>
 														</div>
 													</div>
 												</div>
@@ -67,16 +67,15 @@
 											</div>
 										</div>
 									</div>
+									
 									@endforeach
 
 								</div>
-
-
-								 <div class="text-center" style="padding-left: 40%;">
-						                {{ $products->appends(['sort' => 'id'])->links() }}
-						         </div>
-
+								<div class="col-12" style="margin-top: 0%; overflow-x: auto;">
+						          {{ $products->appends(['sort' => 'id'])->links() }}
+								</div>
 							</div>
+							
 
 						</div>
 					</div>

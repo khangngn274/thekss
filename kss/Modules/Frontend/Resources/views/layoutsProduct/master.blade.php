@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="{{ asset('index/css/magnific-popup.css') }}" type="text/css" />
 
 	<link rel="stylesheet" href="{{ asset('index/css/responsive.css') }}" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
 	<!-- Document Title
@@ -34,6 +34,7 @@
 		<!-- Header
 		============================================= -->
 		@include('frontend::layoutsProduct.header')
+		
 
 		@yield('content')
 

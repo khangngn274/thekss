@@ -1,4 +1,4 @@
-<header id="header" class="transparent-header page-section dark">
+<header id="header" class="headertechnology transparent-header page-section dark">
 
 	<div id="header-wrap">
 
@@ -12,6 +12,7 @@
 				<a href="/" class="standard-logo" data-dark-logo="index/images/logo-dark.png"><img src="index/images/logo.png" alt="Canvas Logo"></a>
 				<a href="/" class="retina-logo" data-dark-logo="index/images/logo-dark2x.png"><img src="index/images/logo2x.png" alt="Canvas Logo"></a>
 			</div><!-- #logo end -->
+			
 
 			<!-- Primary Navigation
 			============================================= -->

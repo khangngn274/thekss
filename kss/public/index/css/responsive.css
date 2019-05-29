@@ -1,7 +1,17 @@
 /* ----------------------------------------------------------------
 	Responsive CSS
 -----------------------------------------------------------------*/
+@media (max-width: 1208px) {
 
+	.primary-menu{
+		display: none!important;
+	}
+	#primary-menu-trigger{
+		font-size: 30px!important;
+		top: 15px!important;
+	}
+
+}
 
 @media (max-width: 1199.98px) {
 
@@ -1541,8 +1551,8 @@
 	#header.full-header .container,
 	.container-fullwidth {
 		width: 100% !important;
-		padding-left: 40px !important;
-		padding-right: 40px !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
 	}
 
 	#primary-menu-trigger { left: 20px; }
@@ -1565,11 +1575,11 @@
 	#top-account a.btn i:last-child { display: none; }
 
 	.swiper_wrapper:not(.force-full-screen),
-	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide { height: 180px !important; }
+	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide { height: 200px !important; }
 
-	.swiper_wrapper .slider-caption h2 { font-size: 1.75rem; }
+	.swiper_wrapper .slider-caption h2 { font-size: 15px; }
 
-	.swiper_wrapper .slider-caption p { font-size: 1rem; }
+	.swiper_wrapper .slider-caption p { font-size: 10px; }
 
 	#header.transparent-header.floating-header .container {
 		width: 310px;
@@ -1696,6 +1706,120 @@
 
 	.button.button-desc span { font-size: 11px; }
 
+	#header, #header-wrap, #logo img{
+		height: 80px;
+	}
+
+	h3.fadeInLeftBig.animated ,h3.fadeInRightBig.animated{
+		font-size: 14px!important;
+	}
+	h1.fadeInUp.animated{
+		font-size: 20px!important;
+		margin-bottom: 40px;
+	}
+	.slider-caption.slider-caption-center{
+		font-size: 20px!important;
+		top: 28px!important;
+	}
+	a.button.button-rounded.button-reveal.button-large.button-border.tright.font-weight-bold{
+		width: 25%;
+		line-height: 10px;
+		font-size: 14px;
+	}
+	.slider-arrow-left, .slider-arrow-right, .flex-prev, .flex-next, .slider-arrow-top-sm, .slider-arrow-bottom-sm {
+/* 		top: 60%;
+ */	}
+ 	p.lead.text-justify{
+ 		font-size: 16px!important;
+ 	}
+
+ 	#footer .col-md-5, #footer .col-md-7{
+ 		padding-left: 0px!important;
+ 	}
+ 	#footer .col-md-5{
+ 		margin-bottom: 10%;
+ 	}
+
+ 	.promo-full {
+	    padding: 10px 0 !important;
+	}
+	.topmargin-lg {
+    margin-top: 20px !important;
+	}
+	.section.nobg.topmargin-lg.nobottommargin,.section.nobg.notopmargin.noborder.bottommargin-sm{
+		margin-bottom: 20px!important;
+		padding-bottom: 0!important;
+	}
+
+	
+	.modal img{
+		height: auto!important;
+	}
+	.section.center.nomargin{
+		padding: 10px!important;
+	}
+	button.btn.btn-outline-dark {
+	    font-size: 15px;
+	}
+
+	#section-product div.col-lg-4.mb-4:nth-child(4) , #related-portfolio div.col-lg-4.col-md-6.col-12.mb-3:nth-child(4){
+		display: none!important;
+	}
+	#section-product div.col-lg-4.mb-4:nth-child(5), #related-portfolio div.col-lg-4.col-md-6.col-12.mb-3:nth-child(5){
+		display: none!important;
+	}
+	/* #section-product div.col-lg-4.mb-4:nth-child(6), #related-portfolio div.col-lg-4.col-md-6.col-12.mb-3:nth-child(6){
+		display: none!important;
+	}
+ */	
+
+ 	div#logo{
+ 		height: 80px!important;
+ 	}
+	#header .container.clearfix{
+		position: fixed!important;
+		background: white;
+		height: 80px!important;
+	}
+	#header nav#primary-menu{
+		background-color: white;
+		  overflow-y: auto!important;
+		  height: auto;
+
+	}
+	.headertechnology .container.clearfix{
+		background: #333!important;
+		height: 80px!important;
+	}
+	.headertechnology nav#primary-menu{
+		background-color: #333!important;
+		  overflow-x: auto;
+
+	}
+	section#slider{
+		margin-top: 80px;
+	}
+	#header .container, header#header .container.clearfix{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.flip-card-front{
+		background-size: 100%!important;
+	}
+	section#page-title {
+	    padding-top: 100px;
+	}
+
+	.primary-menu{
+		display: none!important;
+	}
+	a.button.button-rounded.button-reveal.button-small.button-border.tright.font-weight-bold{
+		font-size: 8px!important;
+	}
+	#primary-menu-trigger{
+		font-size: 30px!important;
+		top: 15px!important;
+	}
 }
 
 
